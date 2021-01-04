@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KCalculator</string>
+    <string name="number_pad_zero">0</string>
+    <string name="number_pad_one">1</string>
+    <string name="number_pad_two">2</string>
+    <string name="number_pad_three">3</string>
+    <string name="number_pad_four">4</string>
+    <string name="number_pad_five">5</string>
+    <string name="number_pad_six">6</string>
+    <string name="number_pad_seven">7</string>
+    <string name="number_pad_eight">8</string>
+    <string name="number_pad_nine">9</string>
+    <string name="number_pad_decimal">.</string>
+    <string name="operator_pad_addition">+</string>
+    <string name="operator_pad_subtraction">-</string>
+    <string name="operator_pad_multiplication">*</string>
+    <string name="operator_pad_division">/</string>
+    <string name="operator_pad_equals">=</string>
+    <string name="undo_button_text"><![CDATA[<]]></string>
+    <string name="reset_button_text">C</string>
+    <string name="unsupported_text">Unsupported Format</string>
+</resources>

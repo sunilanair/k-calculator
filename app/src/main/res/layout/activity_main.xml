@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBlack">
+
+    <TextView
+        android:id="@+id/displayTextView"
+        style="@style/InputTextViewTheme"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/numberPadButtonHeight"
+        android:layout_margin="16dp"
+        android:autofillHints="0"
+        app:layout_constraintEnd_toStartOf="@+id/undoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/undoButton"
+        style="@style/ButtonTheme"
+        android:layout_width="25dp"
+        android:layout_height="@dimen/numberPadButtonHeight"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/undo_button_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <include layout="@layout/view_number_pad" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/layoutGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <include layout="@layout/view_operator_pad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
